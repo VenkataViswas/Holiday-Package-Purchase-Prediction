@@ -21,36 +21,16 @@ This project predicts whether a customer will purchase a holiday package based o
 
    * Tried multiple models: Logistic Regression, Decision Tree, Random Forest.
    * Evaluated using accuracy, precision, recall.
-   * Selected **Random Forest Classifier** as the final model because it performed the best on validation data.
+   * Selected **XGBoost Classifier** as the final model because it performed the best on validation data.
 4. **Model Saving:** Used `pickle` to serialize the trained model for deployment.
 
-## 🎯 Why Random Forest?
-
-* Outperformed Logistic Regression and Decision Tree on validation accuracy.
-* Handles both numerical and categorical features well.
-* Robust to overfitting and can capture complex patterns in the data.
-* Final model achieved an **accuracy of \~85%** on the test set.
 
 ## 📈 Project Results
 
-* **Accuracy:** \~85% (varies slightly with random state)
+* **Accuracy:** \~86% (varies slightly with random state)
 * Provides consistent and interpretable predictions.
 
-## 🚀 How To Use
 
-* Load `model.pkl`.
-* Provide customer features in the correct order.
-* Get a prediction (1 = Will purchase, 0 = Will not purchase).
-
-## 📁 Repository Structure
-
-```
-📦 Holiday-Package-Purchase-Prediction
- ├── Notebook_and_Model
- │   ├── main_notebook.ipynb
- │   ├── model.pkl
- ├── README.md
-```
 
 ## ✨ Future Improvements
 
